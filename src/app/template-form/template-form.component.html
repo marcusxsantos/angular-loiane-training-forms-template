@@ -1,0 +1,12 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <div class="form-group">
+    <label for="nome" required>Name</label>
+    <input type="email" class="form-control" id="nome" name="nome" placeholder="Nome" required #nome ngModel>
+    <div>
+      {{ nome.className }}
+    </div>
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="nome@email.com" required email ngModel>
+    <button type="submit" ccdlass="btn btn-primary btn-block">Submit</button>
+  </div>
+</form>
